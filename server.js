@@ -5,8 +5,8 @@ const app = express()
 
 app.use(express.static(path.join(__dirname, '/build')))
 
-app.get('*', (req, res) => {
-    res.send('root')
+app.get('*', (req, res, next) => {
+    next()
 })
 
 const port = process.env.PORT || 3000
