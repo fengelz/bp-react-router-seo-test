@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Mobilo', Arial, sans-serif;
+}
+.page-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hover-rotate {
+    transform: scale(1) rotate(0deg);
+    transition: transform 200ms;
+    &:hover {
+        transform: scale(1.2) rotate(360deg);
+    }
+}
+
+.rounded-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
